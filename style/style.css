@@ -1,42 +1,42 @@
-a    {font-size: 8pt; text-decoration: none; color: #1f1016;}
+a {font-size: 8pt; text-decoration: none; color: white;}
 a:hover
-     {color: #855b65;}
+    {color: #855b65;}
 
-.title	 {font-size: 36pt; font-weight: bold; color: #18191a;}
+.title {font-size: 36pt; font-weight: bold; color: white;}
 /* at = a title*/
-.at     {font-size: 24pt; text-decoration: none; color: #2081e2;}
+.at {font-size: 24pt; text-decoration: none; color: #2081e2;}
 .at:hover
-     {color: #18191a;}
+    {color: gray;}
 
 /* aa = a address */
-.aa  {font-size: 12pt; text-decoration: none;}
+.aa {font-size: 12pt; text-decoration: none;}
 .aa:hover
-     {color: gray;}
+    {color: gray;}
 
 /* ac = a content */
-.ac  {font-size: 12pt; text-decoration: none; color: #000000;}
+.ac {font-size: 12pt; text-decoration: none; color: white;}
 .ac:hover
-     {color: #2081e2;}
+    {color: #2081e2;}
 
 /* ama */
-.amap {font-size: 10pt; text-decoration: none; font-weight: bold; color: #000000; font-family: monospace}
+.amap {font-size: 10pt; text-decoration: none; font-weight: bold; color: white; font-family: monospace}
 .amap:hover
-     {color: #2081e2;}
+    {color: #2081e2;}
 
 /* ams = a marketplaces, socials */
 .ams {font-size: 12pt; text-decoration: none; color: #2081e2; display: flex; align-items: center; justify-content: left}
 .ams:hover
-     {color: #24afff;}
+    {color: gray;}
 
 /* atdp = a table descriptiontarget="_new"*/
 .atdp {font-size: 12pt; text-decoration: none; color: #2081e2;}
 .atdp:hover
-     {color: #000000;}
+    {color: gray;}
 
-/* af = a footnote*/
+/* afn = a footnote*/
 .afn {font-size: 12pt; text-decoration: none; color: #2081e2;}
 .afn:hover
-     {color: #000000;}
+    {color: gray;}
 
 .fn {font-size: 10pt;}
 
@@ -44,32 +44,26 @@ a:hover
 /* imgps = img socials */
 .imgps {width: 25px; filter: grayscale(1.0);}
 .imgps:hover
-     {filter: grayscale(0.0);}
+    {filter: grayscale(0.0);}
 
-
-
-
-p { 
-   text-indent: 30px;
-}
-
-
-
+p {text-indent: 30px;}
 
 textarea {
-	border-top: 0;
-	border-left: 0;
+    border-top: 0;
+    border-left: 0;
+    color: white;
+    background: black;
 }
 
-/* bcab = background color black ASCII Art */
+/* bcb = background color black ASCII Art */
 .bcb {
-	background-color:#e8e8e8;
+    background-color: #000000;
     display: table;
-    border-collapse: separate;	
+    border-collapse: separate;
 }
-/* bce = background color white ASCII Art */
+/* bcw = background color white ASCII Art */
 .bcw {
-	background-color:#ffffff;
+    background-color: #2081e2;
 }
 
 /*dc div checkbocks */
@@ -77,8 +71,8 @@ textarea {
 
 /*dtc div table caption */
 /*atc a table caption */
-.dtc {display: flex; justify-content: center; text-align: center; font-size: 26pt; background-color: #f0f0f0;}
-.atc {font-size: 13pt; background-color: #f0f0f0;}
+.dtc {display: flex; justify-content: center; text-align: center; font-size: 26pt; background-color: gray;}
+.atc {font-size: 13pt; background-color: gray;}
 
 /* tts = table series */
 /* <tr align="center" valign="bottom" style="font-smooth: never; -webkit-font-smoothing: none;"> */
@@ -87,6 +81,3 @@ textarea {
 .tts tr:last-child {border: none;}
 .tts td {border-right: 1px solid #d0d0d0;}
 .tts td:last-child {border: none;}
-
-
-
