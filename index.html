@@ -16,35 +16,25 @@
     <meta name="charset" content="charset=utf-8">
     <meta name="author" content="@powjpgs">
     <meta name="description" content="NOT terminal. Not Research Contest Entry">
-    <meta name="keywords" content="powjpgs, research, ascii, art, NOT, TON, Notcoin, Toncoin">
+    <meta name="keywords" content="powjpgs, research, ASCII Art, ascii, art, NOT, TON, Notcoin, Toncoin">
 </head>
-
+cxzvb
 
 
 
 <script type="text/javascript">
-
-// wCT = writeClipboardText
-async function wCT(text) {
-  try {
-    await navigator.clipboard.writeText(text);
-  } catch (error) {
-    console.error(error.message);
-  }
-}
-
 function remove_bck(check_box_name, ascii_art_name) {
-	var checkBox = document.getElementById(check_box_name);
-	var ascii_art = document.getElementById(ascii_art_name);
-
-	ascii_art.style.backgroundColor = checkBox.checked ? '#ffffff' : '#e8e8e8';
+    var checkBox = document.getElementById(check_box_name);
+    var ascii_art = document.getElementById(ascii_art_name);
+    let backgroundColor = checkBox.checked ? '#000000' : '#2081e2';
+    [...ascii_art.querySelectorAll("font[class*='bcw']")]
+        .forEach(el => el.style.backgroundColor = backgroundColor);
 }
 </script>
 
 
 
-<body leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0">
-
+<body text="white" bgcolor="black" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0">
 
 
 <img src="img/banner_avatar_center.png" style="width: 100%; min-height: 300px; min-width: 900px;">
@@ -73,39 +63,39 @@ function remove_bck(check_box_name, ascii_art_name) {
 
 <div style="margin: 5% 15% 0% 15%; font-size: 12pt; text-align: left;">
 
-	<h2><a name="TLDR"></a>TL;DR<sup><a href="https://en.wikipedia.org/wiki/TL;DR" title="wikipedia: too long; didn't read" target="_new" class="atdp">*</a></b></h2>
-	<p>
-		Yes, it is possible to write <a href="#_Phrases_in_addresses_results" name="_TLDR_back1" title="Show me research results!" class="atdp">English/Latin phrases</a> and draw simple <a href="#_ASCII_Art_results" name="_TLDR_back2" class="atdp" title="Show me research results!">ASCII Art</a> on notcoin holder addresses!
-	</p>	
-	<h2>Content</h2>
-	<ul type="disk">
-		<li><a href="#TLDR" class="ac">TL;DR</a></li>
-		<li><a href="#Ideal" class="ac">Ideal</a></li>
-		<li><a href="#Research" class="ac">Research on notcoin holders addresses</a></li>
-		<li><a href="#English_words_in_addresses" class="ac">English words in addresses</a></li>
-		<li><a href="#Latin_words_in_addresses" class="ac">Latin words in addresses</a></li>
-		<li><a href="#Letters_in_addresses" class="ac">Letters in addresses</a></li>
-		<li><a href="#Symbol_repetition" class="ac">Symbol repetition in addresses</a></li>
-		<li><a href="#ASCII_Art" class="ac">ASCII Art on notcoin holders addresses</a></li>
-		<li><a href="#Results" class="ac">Results</a></li>
-		<li><a href="#Roadmap" class="ac">Roadmap</a></li>
-	</ul>
-	<h2><a name="Ideal"></a>Ideal</h2>
-	<p>
-		While looking at the list of Notcoin holders addresses in the TON explorers, I had a thought. What if we could find some addresses to display something really interesting? 
-	</p>	
-	<p>
-		Let's imagine what all these "finds" would look like if they were displayed on the monochrome terminals of the last century (1970s-1980s)<sup><a href="https://en.wikipedia.org/wiki/Computer_terminal" target="_new" class="atdp">*</a></sup>. They were huge boxes with glass screens (sometimes just CRT TVs) that displayed only <b>24x80</b> characters. Nowadays you can find such old things only in museums or in grandpa's basement, garage or attic <b>;-)</b>.
-	</p>	
-	<p>
-		The most obvious example is ASCII art on notcoin addresses. The <b>addresses shown below are real and clickable</b> but have no real owners, they are just "mined" for the example (i.e. their seed/secret phrases are unknown). <b>Note</b>: in the research parts, only addresses of <b>real notcoin holders</b> are used.
-	</p>	
-	
+    <h2><a name="TLDR"></a>TL;DR<sup><a href="https://en.wikipedia.org/wiki/TL;DR" title="wikipedia: too long; didn't read" target="_new" class="atdp">*</a></b></h2>
+    <p>
+        Yes, it is possible to write <a href="#_Phrases_in_addresses_results" name="_TLDR_back1" title="Show me research results!" class="atdp">English/Latin phrases</a> and draw simple <a href="#_ASCII_Art_results" name="_TLDR_back2" class="atdp" title="Show me research results!">ASCII Art</a> on notcoin holder addresses!
+    </p>    
+    <h2>Content</h2>
+    <ul type="disk">
+        <li><a href="#TLDR" class="ac">TL;DR</a></li>
+        <li><a href="#Ideal" class="ac">Ideal</a></li>
+        <li><a href="#Research" class="ac">Research on notcoin holders addresses</a></li>
+        <li><a href="#English_words_in_addresses" class="ac">English words in addresses</a></li>
+        <li><a href="#Latin_words_in_addresses" class="ac">Latin words in addresses</a></li>
+        <li><a href="#Letters_in_addresses" class="ac">Letters in addresses</a></li>
+        <li><a href="#Symbol_repetition" class="ac">Symbol repetition in addresses</a></li>
+        <li><a href="#ASCII_Art" class="ac">ASCII Art on notcoin holders addresses</a></li>
+        <li><a href="#Results" class="ac">Results</a></li>
+        <li><a href="#Roadmap" class="ac">Roadmap</a></li>
+    </ul>
+    <h2><a name="Ideal"></a>Ideal</h2>
+    <p>
+        While looking at the list of Notcoin holders addresses in the TON explorers, I had a thought. What if we could find some addresses to display something really interesting? 
+    </p>    
+    <p>
+        Let's imagine what all these "finds" would look like if they were displayed on the monochrome terminals of the last century (1970s-1980s)<sup><a href="https://en.wikipedia.org/wiki/Computer_terminal" target="_new" class="atdp">*</a></sup>. They were huge boxes with glass screens (sometimes just CRT TVs) that displayed only <b>24x80</b> characters. Nowadays you can find such old things only in museums or in grandpa's basement, garage or attic <b>;-)</b>.
+    </p>    
+    <p>
+        The most obvious example is ASCII art on notcoin addresses. The <b>addresses shown below are real and clickable</b> (~1 nano notcoin on each), but have no real owners, they are just "mined" for the example (i.e. their seed/secret phrases are unknown). <b>Note</b>: in the research parts, only addresses of <b>real notcoin holders</b> are used.
+    </p>    
+    
 <table class="tts">
-	<tr>
-		<td colspan="2">
-			<div align="center"><b>NOT logotype<sup><a href="https://cdn.joincommunity.xyz/explore/icons/notcoin-logo-rounded.svg" title="Source" target="_new" class="atdp">*</a></b></div>
-			<div align="center">&nbsp;</div>
+    <tr>
+        <td colspan="2">
+            <div align="center"><b>NOT logotype<sup><a href="https://cdn.joincommunity.xyz/explore/icons/notcoin-logo-rounded.svg" title="Source" target="_new" class="atdp">*</a></b></div>
+            <div align="center">&nbsp;</div>
 <pre name="ideal_01" id="ideal_01">
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK0W" title="View address" target="_new" class="aa">EQABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK0W</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK0W" title="View address" target="_new" class="aa">EQABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK0W</a>&nbsp;&nbsp;
@@ -132,10 +122,10 @@ function remove_bck(check_box_name, ascii_art_name) {
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK0W" title="View address" target="_new" class="aa">EQABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK0W</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK0W" title="View address" target="_new" class="aa">EQABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK0W</a>&nbsp;&nbsp;
 </pre>
-		</td>
-		<td colspan="2">
-			<div align="center"><b>Flork with heart<sup><a href="https://x.com/FlorkOfCows" title="Source" target="_new" class="atdp">*</a><sup></b></div>
-			<div align="center">&nbsp;</div>
+        </td>
+        <td colspan="2">
+            <div align="center"><b>Flork with heart<sup><a href="https://x.com/FlorkOfCows" title="Source" target="_new" class="atdp">*</a><sup></b></div>
+            <div align="center">&nbsp;</div>
 <pre name="ideal_02" id="ideal_02">
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQA------------------------------------------HxY" title="View address" target="_new" class="aa">EQA------------------------------------------HxY</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQA--------------------ooooo-----------------A4r" title="View address" target="_new" class="aa">EQA--------------------ooooo-----------------A4r</a>&nbsp;&nbsp;
@@ -161,13 +151,13 @@ function remove_bck(check_box_name, ascii_art_name) {
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQA------------O---------Oo-------------oO---M2b" title="View address" target="_new" class="aa">EQA------------O---------Oo-------------oO---M2b</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQA------------------------------------------HxY" title="View address" target="_new" class="aa">EQA------------------------------------------HxY</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQA------------------------------------------HxY" title="View address" target="_new" class="aa">EQA------------------------------------------HxY</a>&nbsp;&nbsp;
-</pre>	
-			</td>
-			</tr>
-		<tr>
-			<td colspan="2">
-				<div align="center"><b>Notcoin mascot<sup><a href="https://en.wikipedia.org/wiki/Mascot" title="Source" target="_new" class="atdp">*</a></sup>?</b></div>
-				<div align="center">&nbsp;</div>
+</pre>
+            </td>
+            </tr>
+        <tr>
+            <td colspan="2">
+                <div align="center"><b>Notcoin mascot<sup><a href="https://en.wikipedia.org/wiki/Mascot" title="Source" target="_new" class="atdp">*</a></sup>?</b></div>
+                <div align="center">&nbsp;</div>
 <pre name="ideal_03" id="ideal_03">
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQA------------------------------------------HxY" title="View address" target="_new" class="aa">EQA------------------------------------------HxY</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQA-------------------------iNOTDDDDbbb------OLY" title="View address" target="_new" class="aa">EQA-------------------------iNOTDDDDbbb------OLY</a>&nbsp;&nbsp;
@@ -194,10 +184,10 @@ function remove_bck(check_box_name, ascii_art_name) {
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQA--------------------vDe-------------------FNH" title="View address" target="_new" class="aa">EQA--------------------vDe-------------------FNH</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQA------------------------------------------HxY" title="View address" target="_new" class="aa">EQA------------------------------------------HxY</a>&nbsp;&nbsp;
 </pre>
-		</td>
-		<td colspan="2">
-			<div align="center"><b>Notcoin. Probably nothing<sup><a href="https://notcoin.org/" title="Source" target="_new" class="atdp">*</a><sup></b></div>
-			<div align="center">&nbsp;</div>
+        </td>
+        <td colspan="2">
+            <div align="center"><b>Notcoin. Probably nothing<sup><a href="https://notcoin.org/" title="Source" target="_new" class="atdp">*</a><sup></b></div>
+            <div align="center">&nbsp;</div>
 <pre name="ideal_04" id="ideal_04">
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK0W" title="View address" target="_new" class="aa">EQABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK0W</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQAB_BBBB_BB___BB_____BB__BBB___BB___B_BBBB_BHfe" title="View address" target="_new" class="aa">EQAB_BBBB_BB___BB_____BB__BBB___BB___B_BBBB_BHfe</a>&nbsp;&nbsp;
@@ -224,65 +214,65 @@ function remove_bck(check_box_name, ascii_art_name) {
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQAB_BBBB_BB___BBBB_BBB_BB_B___B_BBBB_BB____BNBp" title="View address" target="_new" class="aa">EQAB_BBBB_BB___BBBB_BBB_BB_B___B_BBBB_BB____BNBp</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK0W" title="View address" target="_new" class="aa">EQABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK0W</a>&nbsp;&nbsp;
 </pre>
-			</td>
-		</tr>
-	</table>
-	<br>
-	<br>
-	<br>
-	<br>	
-	<h2><a name="Research"></a>Research on notcoin holders addresses</h2>
-	<p>
-		These explorers&nbsp;
-		<a href="https://tonscan.org/jetton/EQAvlWFDxGF2lXm67y4yzC17wYKD9A0guwPkMs1gOsM__NOT" target="_new" class="atdp">tonscan</a>,&nbsp;
-		<a href="https://tonviewer.com/EQAvlWFDxGF2lXm67y4yzC17wYKD9A0guwPkMs1gOsM__NOT?section=holders" target="_new" class="atdp">tonviewer.com</a>,&nbsp;
-		<a href="https://dyor.io/token/EQAvlWFDxGF2lXm67y4yzC17wYKD9A0guwPkMs1gOsM__NOT" target="_new" class="atdp">dyor.io</a>&nbsp;
-		say that there are about 2.8M+ notcoin holders.	
-	</p>
-	<table>	
-		<tr>
-			<td>
-			<div style="width: 450px; height:600px; overflow: hidden;">	
-			<img src="img/NOT_holders_addresses_tonviewer.com.png">
-			</div>
-			</td>
-			<td>
-			<div style="width: 450px; height:600px; overflow: hidden;">	
-			<img src="img/NOT_holders_addresses_tonscan.org.png">
-			</div>
-			</td>
-		</tr>
-	</table>
-	<p>
-		But&nbsp;
-		<a href="https://tonscan.com/EQAvlWFDxGF2lXm67y4yzC17wYKD9A0guwPkMs1gOsM__NOT?tab=holders" target="_new" title="tonscan.com" class="atdp">tonscan.com</a>&nbsp;
-		shows about <b>5.53M</b> notcoin holders.
-	</p>
-	<p>
-		My queries through the TON API (<b>~2.3GB</b> raw data -> parsing -> clearing
-		-> sorting) showed that there are about <b>5.78M</b> current and former
-		notcoin holders and about <b>0.93M</b> addresses with non-zero NOT balance. 
-		With such a large number of addresses it is possible to display something really interesting: a famous quote,
-		a funny phrases, or even a simple ASCII ART pictures (not perfect, of course, but...).
-	</p>
-	<h4>Some <a href="https://github.com/ton-society/ecosystem-map?tab=readme-ov-file#api-providers" target="_new" class="atdp">TON API</a> providers for data queries:</h4>
-	<p>
-		<ul type="disk">
-			<li><a href="https://toncenter.com" target="_new" class="atdp">toncenter.com</a></li>
-			<li><a href="https://tonapi.io" target="_new" class="atdp">tonapi.io</a></li>
-			<li><a href="https://tonconsole.com" target="_new" class="atdp">tonconsole.com</a></li>
-			<li><a href="https://dyor.io/getapi" target="_new" class="atdp">dyor.io</a></li>
-			<li>...</li>
-		</ul>
-		
-		By querying any one of these APIs, anyone can get the list of all NOT holders, addresses, and other data.
-	</p>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>    
+    <h2><a name="Research"></a>Research on notcoin holders addresses</h2>
+    <p>
+        These explorers&nbsp;
+        <a href="https://tonscan.org/jetton/EQAvlWFDxGF2lXm67y4yzC17wYKD9A0guwPkMs1gOsM__NOT" target="_new" class="atdp">tonscan</a>,&nbsp;
+        <a href="https://tonviewer.com/EQAvlWFDxGF2lXm67y4yzC17wYKD9A0guwPkMs1gOsM__NOT?section=holders" target="_new" class="atdp">tonviewer.com</a>,&nbsp;
+        <a href="https://dyor.io/token/EQAvlWFDxGF2lXm67y4yzC17wYKD9A0guwPkMs1gOsM__NOT" target="_new" class="atdp">dyor.io</a>&nbsp;
+        say that there are about 2.8M+ notcoin holders.    
+    </p>
+    <table>    
+        <tr>
+            <td>
+            <div style="width: 450px; height:600px; overflow: hidden;">    
+            <img src="img/NOT_holders_addresses_tonviewer.com.png">
+            </div>
+            </td>
+            <td>
+            <div style="width: 450px; height:600px; overflow: hidden;">    
+            <img src="img/NOT_holders_addresses_tonscan.org.png">
+            </div>
+            </td>
+        </tr>
+    </table>
+    <p>
+        But&nbsp;
+        <a href="https://tonscan.com/EQAvlWFDxGF2lXm67y4yzC17wYKD9A0guwPkMs1gOsM__NOT?tab=holders" target="_new" title="tonscan.com" class="atdp">tonscan.com</a>&nbsp;
+        shows about <b>5.53M</b> notcoin holders.
+    </p>
+    <p>
+        My queries through the TON API (<b>~2.3GB</b> raw data -> parsing -> clearing
+        -> sorting) showed that there are about <b>5.78M</b> current and former
+        notcoin holders and about <b>0.93M</b> addresses with non-zero NOT balance. 
+        With such a large number of addresses it is possible to display something really interesting: a famous quote,
+        a funny phrases, or even a simple ASCII ART pictures (not perfect, of course, but...).
+    </p>
+    <h4>Some <a href="https://github.com/ton-society/ecosystem-map?tab=readme-ov-file#api-providers" target="_new" class="atdp">TON API</a> providers for data queries:</h4>
+    <p>
+        <ul type="disk">
+            <li><a href="https://toncenter.com" target="_new" class="atdp">toncenter.com</a></li>
+            <li><a href="https://tonapi.io" target="_new" class="atdp">tonapi.io</a></li>
+            <li><a href="https://tonconsole.com" target="_new" class="atdp">tonconsole.com</a></li>
+            <li><a href="https://dyor.io/getapi" target="_new" class="atdp">dyor.io</a></li>
+            <li>...</li>
+        </ul>
+        
+        By querying any one of these APIs, anyone can get the list of all NOT holders, addresses, and other data.
+    </p>
 
 
-	<h4>TON/NOT address format</h4>
-	<p>
-		It's known that common TON/NOT &quot;<a href="https://docs.ton.org/v3/documentation/smart-contracts/addresses#user-friendly-address" target="_new" class="atdp">user-friendly</a>&quot;
-		addresses consist of <b>48</b> <a href="https://en.wikipedia.org/wiki/Base64#URL_applications" target="_new" class="atdp">Base64 URL alphabet </a>  characters (<b>A–Z, a–z, 0–9</b> and "<b>_-</b>"):
+    <h4>TON/NOT address format</h4>
+    <p>
+        It's known that common TON/NOT &quot;<a href="https://docs.ton.org/v3/documentation/smart-contracts/addresses#user-friendly-address" target="_new" class="atdp">user-friendly</a>&quot;
+        addresses consist of <b>48</b> <a href="https://en.wikipedia.org/wiki/Base64#URL_applications" target="_new" class="atdp">Base64 URL alphabet </a>  characters (<b>A–Z, a–z, 0–9</b> and "<b>_-</b>"):
 <pre>
 <b>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-</b>
 
@@ -294,21 +284,21 @@ function remove_bck(check_box_name, ascii_art_name) {
 | Address<sup><a href="#_0" name="_0_back" class="atdp" title="Address is clickable (leads to tonviewer.com)">*</a></sup> example | <a href="https://tonviewer.com/UQBDzrMg_pH-5kTkzg6s9Pi6GbvIf78Q67Mww9B_ofr5eNaQ" title="View address" target="_new" class="aa"><b>UQBDzrMg_pH-5kTkzg6s9Pi6GbvIf78Q67Mww9B_ofr5eNaQ</b></a> |
 +------------------+--------------------------------------------------+
 <div class="fn"><a href="#_0_back" name="_0" class="afn" title="Go back">*</a> - Address is clickable (leads to tonviewer.com)</div>
-</pre>	
-	</p>
-	<br>
-	<br>	
-	<h2><a name="English_words_in_addresses"></a>English <font color="#b0062e"><b>words</b></font> in addresses</h2>
-	<p>
-		A search for words from English (210K+ words) dictionary was performed in the <b>5.78M</b> NOT addresses.
-		Quite a few words were found, so it is <b>possible to write some phrases word by word</b>, one word per line!
-	</p>
-	<p>
-		The case-insensitive, upper-only, lower-only spelling variants were tested.
-		For upper and lower case words, a search was also conducted with "_" and "-"
-		delimiters on both sides of the words (they were necessary for visual
-		separation of the word from other characters in the address). The number of
-		words found for each option is presented in the table below.
+</pre>    
+    </p>
+    <br>
+    <br>    
+    <h2><a name="English_words_in_addresses"></a>English <font color="#b0062e"><b>words</b></font> in addresses</h2>
+    <p>
+        A search for words from English (210K+ words) dictionary was performed in the <b>5.78M</b> NOT addresses.
+        Quite a few words were found, so it is <b>possible to write some phrases word by word</b>, one word per line!
+    </p>
+    <p>
+        The case-insensitive, upper-only, lower-only spelling variants were tested.
+        For upper and lower case words, a search was also conducted with "_" and "-"
+        delimiters on both sides of the words (they were necessary for visual
+        separation of the word from other characters in the address). The number of
+        words found for each option is presented in the table below.
 <pre>
 +-------------+---------+--------------------------------------------------+
 |  Language:  |  Words  |     Examples of addresses<sup><a href="#_1" name="_1_back" class="atdp" title="Addresses are clickable (leads to tonviewer.com)">*</a></sup> with English <font color="#b0062e"><b>words</b></font>    |
@@ -344,7 +334,7 @@ function remove_bck(check_box_name, ascii_art_name) {
 +--------------------------------------------------------+
 <div class="fn"><a href="#_2_back" name="_2" class="afn" title="Go back">*</a> - Addresses are clickable (leads to tonviewer.com)
 <a href="#_citation01_back" name="_citation01" class="afn" title="Go back">**</a> - Sources: <a href="https://www.goodreads.com/quotes/93997-love-the-life-you-live-live-the-life-you-love"  title="www.goodreads.com" target="_new" class="afn">goodreads</a>, <a href="https://www.reddit.com/r/BobMarley/comments/c940zv/origins_of_love_the_life_you_live/" title="www.reddit.com" target="_new" class="afn">reddit</a>
-	</div>
+    </div>
 </pre>
 <pre>
 +-------------+---------+--------------------------------------------------+
@@ -374,23 +364,23 @@ function remove_bck(check_box_name, ascii_art_name) {
 +---------------------------------------------------------------+
 <div class="fn"><a href="#_4_back" name="_4" class="afn" title="Go back">*</a> - Addresses are clickable (leads to tonviewer.com)</div>
 </pre>
-	</p>
-	<p>
-	You can see more examples below: <a href="#_Phrases_in_addresses_results" name="_Phrases_in_addresses_results_back" class="atdp" title="Phrases in notcoin holder addresses...">Phrases in notcoin holder addresses...</a> 
-	</p>
-	<br>
-	<br>
-	<h2><a name="Latin_words_in_addresses"></a>Latin <font color="#b0062e"><b>words</b></font> in addresses</h2>
-	<p>
-		A search for words from the Latin dictionary (80K+ words) was performed in the <b>5.78M</b> NOT addresses.
-		Quite a few words were found, so it is <b>possible to write some phrases word by word</b>, one word per line!
-	</p>
-	<p>
-		The case-insensitive, upper-only, lower-only spelling variants were tested.
-		For upper and lower case words, a search was also conducted with "_" and "-"
-		delimiters on both sides of the words (they were necessary for visual
-		separation of the word from other characters in the address). The number of
-		words found for each option is presented in the table below.
+    </p>
+    <p>
+    You can see more examples below: <a href="#_Phrases_in_addresses_results" name="_Phrases_in_addresses_results_back" class="atdp" title="Phrases in notcoin holder addresses...">Phrases in notcoin holder addresses...</a> 
+    </p>
+    <br>
+    <br>
+    <h2><a name="Latin_words_in_addresses"></a>Latin <font color="#b0062e"><b>words</b></font> in addresses</h2>
+    <p>
+        A search for words from the Latin dictionary (80K+ words) was performed in the <b>5.78M</b> NOT addresses.
+        Quite a few words were found, so it is <b>possible to write some phrases word by word</b>, one word per line!
+    </p>
+    <p>
+        The case-insensitive, upper-only, lower-only spelling variants were tested.
+        For upper and lower case words, a search was also conducted with "_" and "-"
+        delimiters on both sides of the words (they were necessary for visual
+        separation of the word from other characters in the address). The number of
+        words found for each option is presented in the table below.
 <pre>
 
 
@@ -431,25 +421,25 @@ function remove_bck(check_box_name, ascii_art_name) {
 +-------------+---------+--------------------------------------------------+
 <div class="fn"><a href="#_7_back" name="_7" class="afn" title="Go back">*</a> - Addresses are clickable (leads to tonviewer.com)</div>
 </pre>
-	</p>
-	<p>
-	You can see more examples below: <a href="#_Phrases_in_addresses_results" name="#_Phrases_in_addresses_results_back" class="atdp" title="Phrases in notcoin holder addresses...">prases in notcoin holder addresses...</a> 
+    </p>
+    <p>
+    You can see more examples below: <a href="#_Phrases_in_addresses_results" name="#_Phrases_in_addresses_results_back" class="atdp" title="Phrases in notcoin holder addresses...">prases in notcoin holder addresses...</a> 
 
-	</p>
-	</p>
-	<br>
-	<br>
-	<br>	
+    </p>
+    </p>
+    <br>
+    <br>
+    <br>    
 <h3><a name="Letters_in_addresses"></a><font color="#b0062e"><b>Letters</b></font> in addresses</h3>
-	<p>
-	A search for uppercase letters/digits with underlines on both sides (e.g. &quot;<b>_A_</b>&quot;)
-	was performed for all possible positions in the addresses line (from
-	the 4th to 46th character). Underlines are needed to visually separate the
-	letter from other characters in the address.
-	</p>
-	<p>
-	Here is an example of addresses for all positions of the letter <b>_A_</b>.
-	This is roughly what addresses with other letters and numbers look like.
+    <p>
+    A search for uppercase letters/digits with underlines on both sides (e.g. &quot;<b>_A_</b>&quot;)
+    was performed for all possible positions in the addresses line (from
+    the 4th to 46th character). Underlines are needed to visually separate the
+    letter from other characters in the address.
+    </p>
+    <p>
+    Here is an example of addresses for all positions of the letter <b>_A_</b>.
+    This is roughly what addresses with other letters and numbers look like.
 <pre>
 +------------+--------------------------------------------------+
 |  Position  |      Examples of addresses<sup><a href="#_8" name="_8_back" class="atdp" title="Addresses are clickable (leads to tonviewer.com)">*</a></sup> with letter <font color="#b0062e"><b>_A_</b></font>      |
@@ -501,13 +491,13 @@ function remove_bck(check_box_name, ascii_art_name) {
 |     46     | <a href="https://tonviewer.com/EQAdn4TW0u8H3A9ZCyeDzLk7ceZhl7Xmpv7fK0Tcj2Hi8_A_" title="View address" target="_new" class="aa">EQAdn4TW0u8H3A9ZCyeDzLk7ceZhl7Xmpv7fK0Tcj2Hi8<font color="#b0062e"><b>_A_</b></font></a> |
 +------------+--------------------------------------------------+
 <div class="fn"><a href="#_8_back" name="_8" class="afn" title="Go back">*</a> - Addresses are clickable (leads to tonviewer.com)</div>
-</pre>	
-	</p>
-	<p>
-	It turned out that there are about 20 addresses for <b>each letters/numbers</b> and
-	<b>each positions</b>. Thus it is <b>possible to write some phrases letter-by-letter</b>, one
-	letter per line (address)!
-<pre>	
+</pre>    
+    </p>
+    <p>
+    It turned out that there are about 20 addresses for <b>each letters/numbers</b> and
+    <b>each positions</b>. Thus it is <b>possible to write some phrases letter-by-letter</b>, one
+    letter per line (address)!
+<pre>    
 <textarea rows="24" cols="90" wrap="off" readonly="true" autocorrect="off" spellcheck="off" style="font-size: 12pt">
 +--------+----------------------------------------------------------------------------------------------------------------------------------+
 |        |            Number of addresses with symbol at the specified position                                                             |
@@ -584,15 +574,15 @@ function remove_bck(check_box_name, ascii_art_name) {
 <div class="fn"><a href="#_12_back" name="_12" class="afn" title="Go back">*</a> - Addresses are clickable (leads to tonviewer.com)</div>
 </pre>
 
-	</p>
-	<p>
-	You can see other examples below: <a href="#_Letters_in_addresses_results" name="_Letters_in_addresses_results_back" class="atdp" title="Phrases letter-by-letter address-by-address...">phrases letter-by-letter address-by-address...</a> 
-	</p>
-	<br>
-	<br>
-	<br>	
+    </p>
+    <p>
+    You can see other examples below: <a href="#_Letters_in_addresses_results" name="_Letters_in_addresses_results_back" class="atdp" title="Phrases letter-by-letter address-by-address...">phrases letter-by-letter address-by-address...</a> 
+    </p>
+    <br>
+    <br>
+    <br>    
 <h3><a name="Symbol_repetition"></a><font color="#b0062e"><b>Symbol repetition</b></font> in addresses</h3>
-	<p>
+    <p>
     A search for repeating characters in addresses was performed. Unfortunately,
     even for 6+ repeating characters only 8 addresses were found.
 <pre>
@@ -616,29 +606,29 @@ function remove_bck(check_box_name, ascii_art_name) {
 <div class="fn"><a href="#_9_back" name="_9" class="afn" title="Go back">*</a> - Addresses are clickable (leads to tonviewer.com)</div>
 </pre>
     Haven't figured out how to apply these repeats yet.
-	</p>
-	<br>
-	<br>
-	<br>	
+    </p>
+    <br>
+    <br>
+    <br>    
 <h3><a name="ASCII_Art"></a><font color="#b0062e"><b>ASCII Art</b></font> on notcoin holders addresses</h3>
-	<p>
-	An attempt has been made to render simple b/w pictures based on the basic principles of ASCII Art <a href="http://www.jave.de/image2ascii/algorithms.html" target="_new" class="atdp">[1]</a>, <a href="https://stackoverflow.com/questions/32987103/image-to-ascii-art-conversion/32987834#32987834" target="_new" class="atdp">[2]</a>, 
+    <p>
+    An attempt has been made to render simple b/w pictures based on the basic principles of ASCII Art <a href="http://www.jave.de/image2ascii/algorithms.html" target="_new" class="atdp">[1]</a>, <a href="https://stackoverflow.com/questions/32987103/image-to-ascii-art-conversion/32987834#32987834" target="_new" class="atdp">[2]</a>, 
 <a href="https://www.jonathan-petitcolas.com/2017/12/28/converting-image-to-ascii-art.html" target="_new" class="atdp">[3]</a>, <a href="https://www.codeproject.com/KB/recipes/ASCII_Imager.aspx" target="_new" class="atdp">[4]</a>.     </p>
-	<p>
+    <p>
     A monospaced font was chosen and its (<a href="https://en.wikipedia.org/wiki/Base64#URL_applications" target="_new" class="atdp">Base64url</a>) characters were graded on a gray scale.
-	On reconciliation, the symbols <b>'_'</b> and <b>'-'</b> were chosen to be responsible for
-	the color white, and the others were chosen to be responsible for black.
+    On reconciliation, the symbols <b>'_'</b> and <b>'-'</b> were chosen to be responsible for
+    the color white, and the others were chosen to be responsible for black.
     </p>
-	<p>
-	So, in order to be able to draw with the "_-" delimiters, there must be a sufficiently large
-	number of addresses among the <b>5.78M</b> that include several "_-" in one address.
+    <p>
+    So, in order to be able to draw with the "_-" delimiters, there must be a sufficiently large
+    number of addresses among the <b>5.78M</b> that include several "_-" in one address.
     </p>
-	<p>
+    <p>
     Counting addresses with 1, 2, 3 and 4 "_-" delimiters showed that there are
     a significant number of such addresses (from 0.2M to 4.3M). So, it is quite
     possible to draw at least simple &quot;b/w&quot; drawings on the addresses of NOT holders.
     </p>
-	<p>
+    <p>
 <pre>
 +--------------+--------------------------------------------------+
 |   Number of  |                                                  |
@@ -703,14 +693,14 @@ function remove_bck(check_box_name, ascii_art_name) {
 <div class="fn"><a href="#_11_back" name="_11" class="afn" title="Go back">*</a> - Addresses are clickable (leads to tonviewer.com)</div>
 <div class="dc" align="center"><input type="checkbox" name="checkbox01" id="checkbox01" onclick="remove_bck('checkbox01', 'ascii_art_01')"/><label for="color_hint">Remove background</label></div>
 </pre>
-	</p>
-
-	<p>
-	Right now it takes about an hour (Python bruteforce) to pick 24 NOT addresses for one simple &quot;b/w&quot; 48x24 ASCII Art picture...
-	</p>
-	<p>
-	You can see otherthe examples below: <a href="#_ASCII_Art_results" name="_ASCII_Art_results_back" class="atdp" title="ASCII Art on notcoin holders addresses...">ASCII Art on notcoin holders addresses...</a> 
-	</p>
+    </p>    
+    
+    <p>
+    Right now it takes about an hour (Python bruteforce) to pick 24 NOT addresses for one simple &quot;b/w&quot; 48x24 ASCII Art picture...
+    </p>
+    <p>
+    You can see otherthe examples below: <a href="#_ASCII_Art_results" name="_ASCII_Art_results_back" class="atdp" title="ASCII Art on notcoin holders addresses...">ASCII Art on notcoin holders addresses...</a> 
+    </p>
 <br>
 <br>
 <br>
@@ -726,8 +716,8 @@ function remove_bck(check_box_name, ascii_art_name) {
   </tr>  
   <tr>
     <td colspan="2">
-		<div align="center"><b>NOT logotype<sup><a href="https://cdn.joincommunity.xyz/explore/icons/notcoin-logo-rounded.svg" title="Source" target="_new" class="atdp">*</a><sup></b></div>
-		<div align="center">&nbsp;</div>
+        <div align="center"><b>NOT logotype<sup><a href="https://cdn.joincommunity.xyz/explore/icons/notcoin-logo-rounded.svg" title="Source" target="_new" class="atdp">*</a><sup></b></div>
+        <div align="center">&nbsp;</div>
 
 <pre name="ascii_art_02" id="ascii_art_02" class="bcb">
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQD0PBMH0GKaMVNBxMmRpMI6FVL0QWRopxCOBiBBBEY5OmyK" title="View address" target="_new" class="aa">UQD0PBMH0GKaMVNBxMmRpMI6FVL0QWRopxCOBiBBBEY5OmyK</a>&nbsp;&nbsp;
@@ -755,16 +745,16 @@ function remove_bck(check_box_name, ascii_art_name) {
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQDqqyuOQnNEWRxDrR0BKDCg8pGy6wNR6W2HD7dq4ABz6MUZ" title="View address" target="_new" class="aa">UQDqqyuOQnNEWRxDrR0BKDCg8pGy6wNR6W2HD7dq4ABz6MUZ</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQBaBoW9Rz2xMMQk2EH7Zg2K65oD9TdMB70XU1M3RmpNDNe0" title="View address" target="_new" class="aa">UQBaBoW9Rz2xMMQk2EH7Zg2K65oD9TdMB70XU1M3RmpNDNe0</a>&nbsp;&nbsp;
 </pre>
-		<div class="dc">
-			<input type="checkbox" name="checkbox02" id="checkbox02" onclick="remove_bck('checkbox02', 'ascii_art_02')"/>
-			<label for="color_hint">Remove background</label>
-		</div>
-		<br>
+        <div class="dc">
+            <input type="checkbox" name="checkbox02" id="checkbox02" onclick="remove_bck('checkbox02', 'ascii_art_02')"/>
+            <label for="color_hint">Remove background</label>
+        </div>
+        <br>
     </td>
     <td colspan="2">
-		<div align="center"><b>Smiley</b></div>
-		<div align="center">&nbsp;</div>
-		
+        <div align="center"><b>Smiley</b></div>
+        <div align="center">&nbsp;</div>
+        
 <pre name="ascii_art_03" id="ascii_art_03" class="bcb">
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQD0PBMH0GKaMVNBxMmRpMI6FVL0QWRopxCOBiBBBEY5OmyK" title="View address" target="_new" class="aa">UQD0PBMH0GKaMVNBxMmRpMI6FVL0QWRopxCOBiBBBEY5OmyK</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQD0PBMH0GKaMVNBxMmRpMI6FVL0QWRopxCOBiBBBEY5OmyK" title="View address" target="_new" class="aa">UQD0PBMH0GKaMVNBxMmRpMI6FVL0QWRopxCOBiBBBEY5OmyK</a>&nbsp;&nbsp;
@@ -791,17 +781,17 @@ function remove_bck(check_box_name, ascii_art_name) {
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQAJg8sbmBHAkDaRBD0AiCsjTClXahoKNgB8kDSHZ68Od94R" title="View address" target="_new" class="aa">UQAJg8sbmBHAkDaRBD0AiCsjTClXahoKNgB8kDSHZ68Od94R</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQD0PBMH0GKaMVNBxMmRpMI6FVL0QWRopxCOBiBBBEY5OmyK" title="View address" target="_new" class="aa">UQD0PBMH0GKaMVNBxMmRpMI6FVL0QWRopxCOBiBBBEY5OmyK</a>&nbsp;&nbsp;
 </pre>
-		<div class="dc">
-			<input type="checkbox" name="checkbox03" id="checkbox03" onclick="remove_bck('checkbox03', 'ascii_art_03')"/>
-			<label for="color_hint">Remove background</label>
-		</div>
-		<br>
+        <div class="dc">
+            <input type="checkbox" name="checkbox03" id="checkbox03" onclick="remove_bck('checkbox03', 'ascii_art_03')"/>
+            <label for="color_hint">Remove background</label>
+        </div>
+        <br>
     </td>
   </tr>  
   <tr>
     <td colspan="2">
-		<div align="center"><b>Ducky</b></div>
-		<div align="center">&nbsp;</div>
+        <div align="center"><b>Ducky</b></div>
+        <div align="center">&nbsp;</div>
 
 <pre name="ascii_art_04" id="ascii_art_04" class="bcb">
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQD0PBMH0GKaMVNBxMmRpMI6FVL0QWRopxCOBiBBBEY5OmyK" title="View address" target="_new" class="aa">UQD0PBMH0GKaMVNBxMmRpMI6FVL0QWRopxCOBiBBBEY5OmyK</a>&nbsp;&nbsp;
@@ -829,15 +819,15 @@ function remove_bck(check_box_name, ascii_art_name) {
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQBMlE8h5ghUWHN28QJg3m5Rjq5qUlBWHBZ4u8D5xpDVDNP8" title="View address" target="_new" class="aa">UQBMlE8h5ghUWHN28QJg3m5Rjq5qUlBWHBZ4u8D5xpDVDNP8</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQBW8ReWZWQVJhZDAOEBW9QUgO8LQXkx8TH9OdTaB0RfL8UK" title="View address" target="_new" class="aa">UQBW8ReWZWQVJhZDAOEBW9QUgO8LQXkx8TH9OdTaB0RfL8UK</a>&nbsp;&nbsp;
 </pre>
-		<div class="dc">
-			<input type="checkbox" name="checkbox04" id="checkbox04" onclick="remove_bck('checkbox04', 'ascii_art_04')"/>
-			<label for="color_hint">Remove background</label>
-		</div>
-		<br>
+        <div class="dc">
+            <input type="checkbox" name="checkbox04" id="checkbox04" onclick="remove_bck('checkbox04', 'ascii_art_04')"/>
+            <label for="color_hint">Remove background</label>
+        </div>
+        <br>
     </td>
     <td colspan="2" >
-		<div align="center" ><b>Key</b></div>
-		<div align="center">&nbsp;</div>
+        <div align="center" ><b>Key</b></div>
+        <div align="center">&nbsp;</div>
 
 <pre name="ascii_art_05" id="ascii_art_05" class="bcb">
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQD0PBMH0GKaMVNBxMmRpMI6FVL0QWRopxCOBiBBBEY5OmyK" title="View address" target="_new" class="aa">UQD0PBMH0GKaMVNBxMmRpMI6FVL0QWRopxCOBiBBBEY5OmyK</a>&nbsp;&nbsp;
@@ -864,12 +854,12 @@ function remove_bck(check_box_name, ascii_art_name) {
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQBSzZFDPgQxDLYRGDKdWBKIWMMBIdkD2QKr8RM4paU2TBpR" title="View address" target="_new" class="aa">UQBSzZFDPgQxDLYRGDKdWBKIWMMBIdkD2QKr8RM4paU2TBpR</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQBMlE8h5ghUWHN28QJg3m5Rjq5qUlBWHBZ4u8D5xpDVDNP8" title="View address" target="_new" class="aa">UQBMlE8h5ghUWHN28QJg3m5Rjq5qUlBWHBZ4u8D5xpDVDNP8</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQBEwFM5OA8zO5BO81BXN00ydNCrNDGUREBDYMmwmBCwVP5K" title="View address" target="_new" class="aa">UQBEwFM5OA8zO5BO81BXN00ydNCrNDGUREBDYMmwmBCwVP5K</a>&nbsp;&nbsp;
-</pre>		
-           <div class="dc">
-			<input type="checkbox" name="checkbox05" id="checkbox05" onclick="remove_bck('checkbox05', 'ascii_art_05')"/>
-			<label for="color_hint">Remove background</label>
-		</div>
-		<br>
+</pre>
+        <div class="dc">
+            <input type="checkbox" name="checkbox05" id="checkbox05" onclick="remove_bck('checkbox05', 'ascii_art_05')"/>
+            <label for="color_hint">Remove background</label>
+        </div>
+        <br>
     </td>
   </tr>
   <tr>
@@ -882,8 +872,8 @@ function remove_bck(check_box_name, ascii_art_name) {
   </tr>  
   <tr>
     <td colspan="2">
-		<div align="center"><b>NO PAIN, NO GAIN<sup><a href="https://en.wikipedia.org/wiki/No_pain,_no_gain" title="Source" target="_new" class="atdp">*</a><sup></b></div>
-		<div align="center">&nbsp;</div>
+        <div align="center"><b>NO PAIN, NO GAIN<sup><a href="https://en.wikipedia.org/wiki/No_pain,_no_gain" title="Source" target="_new" class="atdp">*</a><sup></b></div>
+        <div align="center">&nbsp;</div>
 
 <pre>
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQCn8GMp666x5uK6SNhYaPmSWr7RijCNN2ZDhMDG3K7qz4VD" title="View address" target="_new" class="aa">EQCn8GMp666x5uK6SNhYaPmSWr7RijCNN2ZDhMDG3K7qz4VD</a>&nbsp;&nbsp;
@@ -899,8 +889,8 @@ function remove_bck(check_box_name, ascii_art_name) {
 </pre>
     </td>
     <td colspan="2">
-		<div align="center"><b>VENI, VIDI, VICI<sup><a href="https://en.wikipedia.org/wiki/Veni,_vidi,_vici" title="Source" target="_new" class="atdp">*</a><sup></b></div>
-		<div align="center">I came, I saw, I conquered</div>
+        <div align="center"><b>VENI, VIDI, VICI<sup><a href="https://en.wikipedia.org/wiki/Veni,_vidi,_vici" title="Source" target="_new" class="atdp">*</a><sup></b></div>
+        <div align="center">I came, I saw, I conquered</div>
 
 <pre>
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQDqx6TldRNoVfAIYMl0Pen8IEym7nBOmoMiPnmnpwfv3NMy" title="View address" target="_new" class="aa">UQDqx6TldRNoVfAIYMl0Pen8IEym7nBOmoMiPnmnpwfv3NMy</a>&nbsp;&nbsp;
@@ -918,8 +908,8 @@ function remove_bck(check_box_name, ascii_art_name) {
   </tr>
   <tr>
     <td colspan="2">
-		<div align="center"><b>TIME IS MONEY<sup><a href="https://en.wikipedia.org/wiki/Time_is_money_(aphorism)" title="Source" target="_new" class="atdp">*</a><sup></b></div>
-		<div align="center">&nbsp;</div>
+        <div align="center"><b>TIME IS MONEY<sup><a href="https://en.wikipedia.org/wiki/Time_is_money_(aphorism)" title="Source" target="_new" class="atdp">*</a><sup></b></div>
+        <div align="center">&nbsp;</div>
 
 <pre>
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQCgfPHzMntDVCyVsvovNzNfTWiFqqqBqkUGeMQEaqCj8bOP" title="View address" target="_new" class="aa">EQCgfPHzMntDVCyVsvovNzNfTWiFqqqBqkUGeMQEaqCj8bOP</a>&nbsp;&nbsp;
@@ -935,8 +925,8 @@ function remove_bck(check_box_name, ascii_art_name) {
 </pre>
     </td>
     <td colspan="2">
-		<div align="center"><b>DURA LEX, SED LEX<sup><a href="https://en.wiktionary.org/wiki/dura_lex,_sed_lex" title="Source" target="_new" class="atdp">*</a><sup></b></div>
-		<div align="center">The law is harsh but it is the law</div>    
+        <div align="center"><b>DURA LEX, SED LEX<sup><a href="https://en.wiktionary.org/wiki/dura_lex,_sed_lex" title="Source" target="_new" class="atdp">*</a><sup></b></div>
+        <div align="center">The law is harsh but it is the law</div>    
 <pre>
 &nbsp;&nbsp;<a href="https://tonviewer.com/QAeUSSKR0YZ9O3FbP7eFn2HoWbgOArI9UGDzDOqD6Myr3b" title="View address" target="_new" class="aa">QAeUSSKR0YZ9O3FbP7eFn2HoWbgOArI9UGDzDOqD6Myr3b</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/QDXhDVBG4BwEmmcidtnzChePXshaEhmykckxMPmgOFQIn2" title="View address" target="_new" class="aa">QDXhDVBG4BwEmmcidtnzChePXshaEhmykckxMPmgOFQIn2</a>&nbsp;&nbsp;
@@ -949,12 +939,12 @@ function remove_bck(check_box_name, ascii_art_name) {
 &nbsp;&nbsp;<a href="https://tonviewer.com/QDuxx4XcyipG8pWGpjNSYJ0lf2snTsVDpSu45VpoTQsnlh" title="View address" target="_new" class="aa">QDuxx4XcyipG8pWGpjNSYJ0lf2snTsVDpSu45VpoTQsnlh</a>&nbsp;&nbsp;
 &nbsp;&nbsp;<a href="https://tonviewer.com/QAKBaxvwr5XEfoFK5Ce3NXhgM1MR7n02UC2HanaPuUg5uc" title="View address" target="_new" class="aa">QAKBaxvwr5XEfoFK5Ce3NXhgM1MR7n02UC2HanaPuUg5uc</a>&nbsp;&nbsp;
 <pre>
-	</td>
+    </td>
   </tr>
   <tr>
     <td colspan="2">
-		<div align="center"><b>BE A VOICE, NOT AN ECHO<sup><a href="https://www.azquotes.com/quote/592403" title="Source" target="_new" class="atdp">*</a><sup></b></div>
-		<div align="center">&nbsp;</div>
+        <div align="center"><b>BE A VOICE, NOT AN ECHO<sup><a href="https://www.azquotes.com/quote/592403" title="Source" target="_new" class="atdp">*</a><sup></b></div>
+        <div align="center">&nbsp;</div>
 
 <pre>
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQDqZHtB9vWueQlsAowsmyv6KuDTvTCULM4pxGSCWa3OcvK5" title="View address" target="_new" class="aa">UQDqZHtB9vWueQlsAowsmyv6KuDTvTCULM4pxGSCWa3OcvK5</a>&nbsp;&nbsp;
@@ -970,8 +960,8 @@ function remove_bck(check_box_name, ascii_art_name) {
 </pre>
     </td>
     <td colspan="2">
-		<div align="center"><b>SCIO ME NIHIL SCIRE<sup><a href="https://en.wikipedia.org/wiki/I_know_that_I_know_nothing" title="Source" target="_new" class="atdp">*</a><sup></b></div>
-		<div align="center">I know that I know nothing</div>
+        <div align="center"><b>SCIO ME NIHIL SCIRE<sup><a href="https://en.wikipedia.org/wiki/I_know_that_I_know_nothing" title="Source" target="_new" class="atdp">*</a><sup></b></div>
+        <div align="center">I know that I know nothing</div>
 
 <pre>
 &nbsp;&nbsp;<a href="https://tonviewer.com/QAjEUOZh110bjBE6aghBEcXFQq4O41NuCMxlF1I2jDpgb8" title="View address" target="_new" class="aa">QAjEUOZh110bjBE6aghBEcXFQq4O41NuCMxlF1I2jDpgb8</a>&nbsp;&nbsp;
@@ -997,8 +987,8 @@ function remove_bck(check_box_name, ascii_art_name) {
   </tr>  
   <tr>
     <td colspan="2">
-		<div align="center"><b>FOLLOW YOUR HEART<sup><a href="https://en.wikipedia.org/wiki/Follow_Your_Heart" title="Source" target="_new" class="atdp">*</a><sup></b></div>
-		<div align="center">&nbsp;</div>
+        <div align="center"><b>FOLLOW YOUR HEART<sup><a href="https://en.wikipedia.org/wiki/Follow_Your_Heart" title="Source" target="_new" class="atdp">*</a><sup></b></div>
+        <div align="center">&nbsp;</div>
 
 <pre>
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQBaYDE6Kl3TnCpJktBuSaThWSKVZslXde1bmON92uibQgbX" title="View address" target="_new" class="aa">EQBaYDE6Kl3TnCpJktBuSaThWSKVZslXde1bmON92uibQgbX</a>&nbsp;&nbsp;
@@ -1028,8 +1018,8 @@ function remove_bck(check_box_name, ascii_art_name) {
 </pre>
     </td>
     <td colspan="2">
-		<div align="center"><b>BIS DAT QUI CITO DAT<sup><a href="https://en.wiktionary.org/wiki/bis_dat_qui_cito_dat" title="Source" target="_new" class="atdp">*</a><sup></b></div>
-		<div align="center">He gives twice who gives promptly</div>
+        <div align="center"><b>BIS DAT QUI CITO DAT<sup><a href="https://en.wiktionary.org/wiki/bis_dat_qui_cito_dat" title="Source" target="_new" class="atdp">*</a><sup></b></div>
+        <div align="center">He gives twice who gives promptly</div>
 
 <pre>
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQAYzNMLuMLaTIgNRTPWgocYo03EalvwwcnnnGz6Fse80nWB" title="View address" target="_new" class="aa">UQAYzNMLuMLaTIgNRTPWgocYo03EalvwwcnnnGz6Fse80nWB</a>&nbsp;&nbsp;
@@ -1061,8 +1051,8 @@ function remove_bck(check_box_name, ascii_art_name) {
   </tr>
   <tr>
     <td colspan="2">
-		<div align="center"><b>WORK HARD, DREAM BIG</b></div>
-		<div align="center">&nbsp;</div>
+        <div align="center"><b>WORK HARD, DREAM BIG</b></div>
+        <div align="center">&nbsp;</div>
 
 <pre>
 &nbsp;&nbsp;<a href="https://tonviewer.com/EQBpzzG89llJJbP6Fy3Gxb9LSHdja16OTDHgmNhKyKsVxEEQ" title="View address" target="_new" class="aa">EQBpzzG89llJJbP6Fy3Gxb9LSHdja16OTDHgmNhKyKsVxEEQ</a>&nbsp;&nbsp;
@@ -1092,8 +1082,8 @@ function remove_bck(check_box_name, ascii_art_name) {
 </pre>
     </td>
     <td colspan="2">
-		<div align="center"><b>OMNIA MEA MECUM PORTO<sup><a href="https://en.wikipedia.org/wiki/Omnia_mea_mecum_porto" title="Source" target="_new" class="atdp">*</a><sup></b></div>
-		<div align="center">All that is mine I carry with me</div>
+        <div align="center"><b>OMNIA MEA MECUM PORTO<sup><a href="https://en.wikipedia.org/wiki/Omnia_mea_mecum_porto" title="Source" target="_new" class="atdp">*</a><sup></b></div>
+        <div align="center">All that is mine I carry with me</div>
 
 <pre>
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQBp3rD8wF3MKaueRbxSXso3HDB4tLCLuF2zeBrsqZPuMEKb" title="View address" target="_new" class="aa">UQBp3rD8wF3MKaueRbxSXso3HDB4tLCLuF2zeBrsqZPuMEKb</a>&nbsp;&nbsp;
@@ -1125,8 +1115,8 @@ function remove_bck(check_box_name, ascii_art_name) {
   </tr>
   <tr>
     <td colspan="2">
-		<div align="center"><b>NOBODY'S PERFECT, BUT ME</b></div>
-		<div align="center">&nbsp;</div>
+        <div align="center"><b>NOBODY'S PERFECT, BUT ME</b></div>
+        <div align="center">&nbsp;</div>
 
 <pre>
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQBzrgjTWNqyfXbguiRTCLfPv3Z5IcAVQquupEz8eJPCXgQD" title="View address" target="_new" class="aa">UQBzrgjTWNqyfXbguiRTCLfPv3Z5IcAVQquupEz8eJPCXgQD</a>&nbsp;&nbsp;
@@ -1156,8 +1146,8 @@ function remove_bck(check_box_name, ascii_art_name) {
 </pre>
     </td>
     <td colspan="2">
-		<div align="center"><b>SCIO ME NIHIL SCIRE<sup><a href="https://en.wikipedia.org/wiki/I_know_that_I_know_nothing" title="Source" target="_new" class="atdp">*</a><sup></b></div>
-		<div align="center">I know that I know nothing</div>
+        <div align="center"><b>SCIO ME NIHIL SCIRE<sup><a href="https://en.wikipedia.org/wiki/I_know_that_I_know_nothing" title="Source" target="_new" class="atdp">*</a><sup></b></div>
+        <div align="center">I know that I know nothing</div>
 
 <pre>
 &nbsp;&nbsp;<a href="https://tonviewer.com/UQCbJ1ij2zzWfe3rntSdElgAAcgNuJyJkCQDyiXMOhd7KJlT" title="View address" target="_new" class="aa">UQCbJ1ij2zzWfe3rntSdElgAAcgNuJyJkCQDyiXMOhd7KJlT</a>&nbsp;&nbsp;
@@ -1188,21 +1178,21 @@ function remove_bck(check_box_name, ascii_art_name) {
       </td>
     </tr>
   </table>
-	<br>
-	<br>
-	<br>	
-	<hr>
-	<h3><a name="Roadmap"></a>Roadmap</h3>
-		<p>Possible development options (donations welcome):
-			<ul type="disk">
-				<li>ASCII Art on addresses: improve the character matching method (4x4 or 9x9);</li>
-				<li>ASCII Art on addresses: selecting the best picture after shifting it left-right-up-down by a small delta (too slow, requires serious optimization);</li>
-				<li>Online text redactor (phrases on addresses);</a></li>
-				<li>ASCII Art on addresses: GPU optimisation - rewright algorithm on CUDA C++ );</li>
-				<li>ASCII Art on addresses: online &quot;graphic&quot; redactor (after GPU optimisation);</a></li>
-				<li>Complete redesign of the site under the style of old-school text terminals 80x24.</li>
-			</ul>
-		</p>
-	</div>
+    <br>
+    <br>
+    <br>    
+    <hr>
+    <h3><a name="Roadmap"></a>Roadmap</h3>
+        <p>Possible development options (donations welcome):
+            <ul type="disk">
+                <li>ASCII Art on addresses: improve the character matching method (4x4 or 9x9);</li>
+                <li>ASCII Art on addresses: selecting the best picture after shifting it left-right-up-down by a small delta (too slow, requires serious optimization);</li>
+                <li>Online text redactor (phrases on addresses);</a></li>
+                <li>ASCII Art on addresses: GPU optimisation - rewright algorithm on CUDA C++ );</li>
+                <li>ASCII Art on addresses: online &quot;graphic&quot; redactor (after GPU optimisation);</a></li>
+                <li>Complete redesign of the site under the style of old-school text terminals 80x24.</li>
+            </ul>
+        </p>
+    </div>
 </body>
 </html>-
