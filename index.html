@@ -26,7 +26,7 @@ cxzvb
 function remove_bck(check_box_name, ascii_art_name) {
     var checkBox = document.getElementById(check_box_name);
     var ascii_art = document.getElementById(ascii_art_name);
-    let backgroundColor = checkBox.checked ? '#000000' : '#2081e2';
+    let backgroundColor = checkBox.checked ? '#000000' : '#86ce56';
     [...ascii_art.querySelectorAll("font[class*='bcw']")]
         .forEach(el => el.style.backgroundColor = backgroundColor);
 }
