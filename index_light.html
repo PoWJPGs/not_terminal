@@ -9,9 +9,9 @@
   gtag('js', new Date());
 
   gtag('config', 'G-ZTNET1S2PE');
-</script>	
+</script>
 <title>NOT terminal. Not Research Contest Entry</title>
-    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="style/style_light.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <meta name="charset" content="charset=utf-8">
     <meta name="author" content="@powjpgs">
@@ -24,14 +24,13 @@
 function remove_bck(check_box_name, ascii_art_name) {
     var checkBox = document.getElementById(check_box_name);
     var ascii_art = document.getElementById(ascii_art_name);
-    let backgroundColor = checkBox.checked ? '#000000' : '#2081e2';
-    [...ascii_art.querySelectorAll("font[class*='bcw']")]
-        .forEach(el => el.style.backgroundColor = backgroundColor);
+
+    ascii_art.style.backgroundColor = checkBox.checked ? '#ffffff' : '#e8e8e8';
 }
 </script>
 
 
-<body text="white" bgcolor="black" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0">
+<body leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0">
 
 
 <img src="img/banner_avatar_center.png" style="width: 100%; min-height: 300px; min-width: 900px;">
@@ -67,7 +66,7 @@ function remove_bck(check_box_name, ascii_art_name) {
     <h2>Content</h2>
     <ul type="disk">
         <li><a href="#TLDR" class="ac">TL;DR</a></li>
-        <li><a href="./index_light.html" class="ac"><font style="color: black; background: white;">Ligh Background and Dark Text site theme</font></a></li>
+        <li><a href="./index.html" class="ac"><font style="color: white; background: black;">Dark Background and Light Text site theme</font></a></li>
         <li><a href="#Ideal" class="ac">Ideal</a></li>
         <li><a href="#Research" class="ac">Research on notcoin holders addresses</a></li>
         <li><a href="#English_words_in_addresses" class="ac">English words in addresses</a></li>
@@ -691,8 +690,8 @@ function remove_bck(check_box_name, ascii_art_name) {
 <div class="fn"><a href="#_11_back" name="_11" class="afn" title="Go back">*</a> - Addresses are clickable (leads to tonviewer.com)</div>
 <div class="dc" align="center"><input type="checkbox" name="checkbox01" id="checkbox01" onclick="remove_bck('checkbox01', 'ascii_art_01')"/><label for="color_hint">Remove background</label></div>
 </pre>
-    </p>    
-    
+    </p>
+
     <p>
     Right now it takes about an hour (Python bruteforce) to pick 24 NOT addresses for one simple &quot;b/w&quot; 48x24 ASCII Art picture...
     </p>
