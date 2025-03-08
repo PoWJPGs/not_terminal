@@ -53,6 +53,8 @@ textarea {
     border-left: 0;
 }
 
+input {accent-color: #2081e2;}
+
 /* bcb = background color black ASCII Art */
 .bcb {
     background-color:#e8e8e8;
